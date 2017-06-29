@@ -1,0 +1,1 @@
+docker build -t jiahaoyang/python-flask-demo:1.0 .
