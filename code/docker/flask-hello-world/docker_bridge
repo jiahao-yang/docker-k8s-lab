@@ -1,0 +1,3 @@
+docker network create -d bridge my-bridge
+
+docker run -d --name test1 --network my-bridge busybox sh -c "while true;do sleep 3600;done"

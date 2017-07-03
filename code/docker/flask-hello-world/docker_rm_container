@@ -1,0 +1,2 @@
+docker rm $(docker ps -aq --filter "status=exited")
+docker container ls -f status=exited | awk '{print$1}' | awk 'NR>1'
